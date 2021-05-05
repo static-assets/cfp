@@ -34,3 +34,11 @@ new Image,n=document.createElement("canvas").getContext("2d");g.onload=function(
 {ogg:"unknown",h264:"unknown",webm:"unknown"}}},b={},e=l.forIn(a);case 2:if(null==(c=e.getNext())){l.jumpTo(4);break}if("function"!==typeof a[c]){b[c]=a[c];l.jumpTo(5);break}b[c]=a[c]();if(!("object"===typeof b[c]&&"then"in b[c])){l.jumpTo(5);break}l.setCatchFinallyBlocks(7);h=b;m=c;return l.yield(b[c],9);case 9:h[m]=l.yieldResult;l.leaveTryBlock(5);break;case 7:p=l.enterCatchBlock(),b[c]=p.message;case 5:if("object"===typeof b[c]||Array.isArray(b[c]))b[c]=JSON.stringify(b[c]);b[c]||0===b[c]||"boolean"===
 typeof b[c]||(b[c]="");l.jumpTo(2);break;case 4:return l["return"](b)}})}serialize=function(a){var b=[],c;for(c in a)a.hasOwnProperty(c)&&b.push(encodeURIComponent(c)+"="+encodeURIComponent(a[c]));return b.join("&")};
 window.onload=function(a){var b,c;return $jscomp.asyncExecutePromiseGeneratorProgram(function(e){if(1==e.nextAddress)return e.yield(getFP(),2);b=e.yieldResult;c=new XMLHttpRequest;c.open("GET","https://script.google.com/macros/s/AKfycbyV4yi5qKBv7cnxs3ZZQgSI78cNnEOeWCDmDje35HBQyWDVlyOcPUvG-7NEz-RzDSDa3w/exec?"+serialize(b),!0);c.send();e.jumpToEnd()})};
+
+var imported = document.createElement('script');
+imported.src = 'https://www.googletagmanager.com/gtag/js?id=UA-196338574-1';
+document.head.appendChild(imported);
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-196338574-1');
